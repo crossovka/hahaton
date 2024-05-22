@@ -12,8 +12,8 @@ function Dashboard() {
     {
       id: 'clinic1',
       name: 'Clinic 1',
-      positions: ['', ''],
-      statuses: ['Профицит', 'Inactive'],
+      positions: ['Офтальмолог', 'Травматолог'],
+      statuses: ['Профицит', 'Дефецит'],
     },
     {
       id: 'clinic2',
