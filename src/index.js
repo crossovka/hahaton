@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Login from './components/Login';
 import Dashboard from './pages/dashboard';
+import Files from './pages/Files/files';
 
 import App from './App';
 import './scss/index.scss';
@@ -16,6 +17,7 @@ ReactDOM.render(
 				<Route exact path="/" element={<App />} />
 				<Route path="/login" element={<Login />} />
 				<Route path="/dashboard" element={<Dashboard />} />
+				<Route path="/files" element={<Files />} />
 			</Routes>
 		</Router>
 	</React.StrictMode>,

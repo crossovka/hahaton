@@ -25,7 +25,7 @@ function Login({ visible, onClose }) {
 			};
 	
 			if (values.username === user.username && values.password === user.password) {
-				navigate('/files');
+				navigate('/Dashboard');
 				// alert('Вы вошли в систему');
 			} else {
 				setError('Неправильный логин или пароль');

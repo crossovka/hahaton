@@ -29,7 +29,6 @@ const Home = () => {
       <main>
         <Hero handleOpenLogin={handleOpenLogin} />
         <Uslugi />
-        <button onClick={handleOpenLogin}>Open Login Modal</button>
         <Login
           visible={showLogin}
           onClose={handleCloseLogin}
