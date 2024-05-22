@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home';
-import Dashboard from './pages/dashboard';
+import Files from './pages/Files/files';
 import './scss/null.scss';
 
 // function App() {
@@ -20,7 +20,7 @@ function App() {
 	return (
 		<Routes>
 			<Route exact path="/" element={<Home />} />
-			<Route path="/new-page" element={<Dashboard />} />
+			<Route path="/new-page" element={<Files />} />
 		</Routes>
 	);
 }

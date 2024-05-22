@@ -1,3 +1,4 @@
+// Home.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Login from '../../components/Login';
@@ -6,40 +7,38 @@ import Footer from '../../components/Footer';
 import Uslugi from '../../components/Uslugi';
 import Hero from '../../components/Hero';
 
-function Home() {
-	const navigate = useNavigate();
-	const [showLogin, setShowLogin] = useState(false);
+const Home = () => {
+  const navigate = useNavigate();
+  const [showLogin, setShowLogin] = useState(false);
 
-	const handleOpenLogin = () => {
-		setShowLogin(true);
-	};
+  const handleOpenLogin = () => {
+    setShowLogin(true);
+  };
 
-	const handleCloseLogin = () => {
-		setShowLogin(false);
-	};
+  const handleCloseLogin = () => {
+    setShowLogin(false);
+  };
 
-	const handleLoginSuccess = () => {
-		// Handle login success here
-		// After successful login, navigate to the dashboard
-		navigate('/dashboard');
-	};
+  const handleLoginSuccess = () => {
+    navigate('/dashboard');
+  };
 
-	return (
-		<div className="wrapper">
-			<Header />
-			<main>
-			<Hero/>
-			<Uslugi/>
-				<button onClick={handleOpenLogin}>Open Login Modal</button>
-				<Login
-					visible={showLogin}
-					onClose={handleCloseLogin}
-					onLoginSuccess={handleLoginSuccess}
-					/>
-			</main>
-				<Footer/>
-		</div>
-	);
-}
+  return (
+    <div className="wrapper">
+      <Header />
+      <main>
+        <Hero handleOpenLogin={handleOpenLogin} />
+        <Uslugi />
+        <button onClick={handleOpenLogin}>Open Login Modal</button>
+        <Login
+          visible={showLogin}
+          onClose={handleCloseLogin}
+          onLoginSuccess={handleLoginSuccess}
+        />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default Home;

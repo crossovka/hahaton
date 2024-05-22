@@ -25,7 +25,7 @@ const Uslug = () => {
 					</div>
 				</div>
 				<div className={styles.uslug__item}>
-					<div className="item__container">
+					<div className={styles.item__container}>
 						<img className="item__image" src="img/Frame(1).png" alt="#" />
 						<div className="item__wrap">
 							<p className={styles.item__name}>Search doctor</p>
@@ -37,7 +37,7 @@ const Uslug = () => {
 					</div>
 				</div>
 				<div className={styles.uslug__item}>
-					<div className="item__container">
+					<div className={styles.item__container}>
 						<img className="item__image" src="img/Frame(2).png" alt="#" />
 						<div className="item__wrap">
 							<p className={styles.item__name}>Search doctor</p>

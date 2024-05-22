@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form, Input } from 'antd';
 import { useNavigate } from 'react-router-dom';
-import Dashboard from '../../pages/dashboard';
 
 function Login({ visible, onClose }) {
 	const [form] = Form.useForm();
@@ -26,7 +25,7 @@ function Login({ visible, onClose }) {
 			};
 	
 			if (values.username === user.username && values.password === user.password) {
-				navigate('/dashboard');
+				navigate('/files');
 				// alert('Вы вошли в систему');
 			} else {
 				setError('Неправильный логин или пароль');

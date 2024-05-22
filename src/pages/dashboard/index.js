@@ -12,8 +12,8 @@ function Dashboard() {
     {
       id: 'clinic1',
       name: 'Clinic 1',
-      positions: ['Офтальмолог', 'Травматолог'],
-      statuses: ['Профицит', 'Дефецит'],
+      positions: ['Офтальмолог', 'Травматолог','Травматолог','Травматолог','Травматолог'],
+      statuses: ['Профицит', 'Дефецит','Профицит', 'Дефецит','Профицит', 'Дефецит'],
     },
     {
       id: 'clinic2',
@@ -37,8 +37,8 @@ function Dashboard() {
         <table className={styles.table}>
           <thead>
             <tr>
-              <th>Position</th>
-              <th>Status</th>
+              <th>Должность</th>
+              <th>Статус</th>
             </tr>
           </thead>
           <tbody>
