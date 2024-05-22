@@ -1,0 +1,97 @@
+.footer {
+	width: 100%;
+	min-height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.footer__list {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 70px;
+	color: #fff;
+	font-size: 25px;
+	list-style: none; /* Убедитесь, что элементы списка не имеют маркеров */
+	padding: 0;
+	margin: 0;
+}
+
+.footer__list a {
+	text-decoration: none;
+	color: #4091b3;
+	border-radius: 50%;
+}
+
+.footer__list a:nth-child(2){
+	color: #31c578;
+}
+.footer__list li:nth-child(2){
+	border: solid 5px #31c578;
+}
+.footer__list li {
+	border: solid 5px #4091b3;
+	border-radius: 50%;
+	padding: 10px 13px;
+	transition: all ease-in-out 0.3s;
+	list-style: none; /* Убедитесь, что элементы списка не имеют маркеров */
+	display: flex; /* Добавьте для центрирования иконки */
+	justify-content: center; /* Добавьте для центрирования иконки */
+	align-items: center; /* Добавьте для центрирования иконки */
+	border-radius: 50%;
+}
+.insta a{
+	border-radius: 50%;
+}
+.fa{
+	line-height: 0;
+}
+.vk:hover {
+	border-color: #0a6dee;
+	box-shadow: 0px 0px 30px #0a6dee;
+	color: #0a6dee;
+}
+
+.whatsapp:hover {
+	border-color: #21cf64;
+	box-shadow: 0px 0px 30px #21cf64;
+	color: #21cf64;
+}
+
+.insta:hover {
+	border-color: #bc2a8d;
+	box-shadow: 0px 0px 30px #bc2a8d;
+	color: #bc2a8d;
+}
+
+@media screen and (max-width: 530px) {
+	.footer__list {
+			gap: 50px;
+			font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.footer__list {
+			gap: 40px;
+			font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.footer__list {
+			gap: 30px;
+			font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.footer__list {
+			gap: 20px;
+			font-size: 18px;
+	}
+}

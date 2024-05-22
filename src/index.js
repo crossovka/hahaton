@@ -3,12 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
-import Home from './pages/home/home';
 import Login from './components/Login';
 import Dashboard from './pages/dashboard';
 
 import App from './App';
-import './index.scss';
+import './scss/index.scss';
 
 ReactDOM.render(
 	<React.StrictMode>

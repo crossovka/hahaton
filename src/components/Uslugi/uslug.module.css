@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.uslug {
+	width: 100%;
+	min-height: 50vh;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+
+}
+
+.uslug__title {
+	color: #1f1534;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 36px;
+}
+
+.title__under {
+	width: 56px;
+	height: 2px;
+	background-color: #000;
+}
+
+.uslug__text {
+	font-size: 18px;
+	line-height: 30px;
+	width: 70%;
+	text-align: center;
+	color: #7D7987;
+	font-family: "Mulish", sans-serif;
+	font-optical-sizing: auto;
+}
+
+.uslug__items {
+	width: 90%;
+	min-height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 50px 0px;
+}
+
+.uslug__item {
+	width: 350px;
+	min-height: 354px;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 10px 40px 50px 0px #e5e9f6b2;
+	display: flex;
+	justify-content: center;
+	transition: all ease-in-out 0.2s;
+	align-items: center;
+}
+
+.uslug__item:hover {
+	transform: scale(0.9);
+	transition: all ease-in-out 0.2s;
+	box-shadow: 10px 40px 50px 0px #a6a7a9b2;
+}
+
+.item__container {
+	padding-top: 30px;
+	width: 85%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.uslug__item img {
+	width: 100px;
+	object-fit: cover;
+	object-position: center center;
+	padding-left: 15px;
+}
+
+.item__name {
+	font-size: 30px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #1f1534;
+	padding-left: 15px;
+}
+
+.item__text {
+	width: 90%;
+	color: #7D7987;
+	font-size: 16px;
+	line-height: 28px;
+	font-family: "Mulish", sans-serif;
+	font-optical-sizing: auto;
+	padding-left: 15px;
+}
+
+.item__wrap {
+	flex: 1 1 auto;
+}
+
+.item__image {
+	height: 60px;
+	width: 60px;
+	max-height: 60px;
+	max-width: 60px;
+}
